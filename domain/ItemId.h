@@ -1,4 +1,5 @@
 #pragma once
-class Money
+class ItemId
 {
 };
+

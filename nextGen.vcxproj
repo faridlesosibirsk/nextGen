@@ -148,12 +148,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="domain\Money.h" />
+    <ClInclude Include="domain\ItemId.h" />
     <ClInclude Include="nextGen.h" />
+    <ClInclude Include="domain\Payment.h" />
+    <ClInclude Include="domain\ProductCatalog.h" />
+    <ClInclude Include="domain\ProductDescription.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="domain\Money.cpp" />
+    <ClCompile Include="domain\ItemId.cpp" />
     <ClCompile Include="nextGen.cpp" />
+    <ClCompile Include="domain\Payment.cpp" />
+    <ClCompile Include="domain\ProductCatalog.cpp" />
+    <ClCompile Include="domain\ProductDescription.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="nextGen.rc" />

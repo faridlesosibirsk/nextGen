@@ -9,7 +9,7 @@ private:
 public:
 	Payment(Money cachTendered); //процедура 
 //с аргументом(переменной) cachTendered типа Money
-	Money getAmount(); 
-// функция getAmount возвращает результат типа Money
+	Money getAmount();
+	// функция getAmount возвращает результат типа Money
 };
 
