@@ -1,4 +1,8 @@
-﻿  ProductCatalog.cpp
-C:\Users\farid\source\repos\nextGen\domain\ProductCatalog.h(7,6): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
-C:\Users\farid\source\repos\nextGen\domain\ProductCatalog.h(7,6): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
-C:\Users\farid\source\repos\nextGen\domain\ProductCatalog.h(7,38): error C2238: непредвиденные лексемы перед ";"
+﻿  Money.cpp
+  ItemId.cpp
+  nextGen.cpp
+  Payment.cpp
+  ProductCatalog.cpp
+  ProductDescription.cpp
+  Создание кода...
+  nextGen.vcxproj -> C:\Users\farid\PortableGit\nextGen\Debug\nextGen.exe
