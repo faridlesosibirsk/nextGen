@@ -23,5 +23,6 @@ Money ProductDescription::getPrice()
 
 std::string ProductDescription::getDescription()
 {
+
 	return descroption;
 }
