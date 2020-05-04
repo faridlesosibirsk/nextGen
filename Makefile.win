@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o model/Money.o model/Payment.o model/ProductDescription.o model/ItemID.o model/ProductCatalog.o model/SalesLineItem.o model/Sale.o model/Register.o
-LINKOBJ  = main.o model/Money.o model/Payment.o model/ProductDescription.o model/ItemID.o model/ProductCatalog.o model/SalesLineItem.o model/Sale.o model/Register.o
+OBJ      = main.o model/Money.o model/Payment.o model/ProductDescription.o model/ItemID.o model/ProductCatalog.o model/SalesLineItem.o model/Sale.o model/Store.o model/Register1.o
+LINKOBJ  = main.o model/Money.o model/Payment.o model/ProductDescription.o model/ItemID.o model/ProductCatalog.o model/SalesLineItem.o model/Sale.o model/Store.o model/Register1.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -48,5 +48,8 @@ model/SalesLineItem.o: model/SalesLineItem.cpp
 model/Sale.o: model/Sale.cpp
 	$(CPP) -c model/Sale.cpp -o model/Sale.o $(CXXFLAGS)
 
-model/Register.o: model/Register.cpp
-	$(CPP) -c model/Register.cpp -o model/Register.o $(CXXFLAGS)
+model/Store.o: model/Store.cpp
+	$(CPP) -c model/Store.cpp -o model/Store.o $(CXXFLAGS)
+
+model/Register1.o: model/Register1.cpp
+	$(CPP) -c model/Register1.cpp -o model/Register1.o $(CXXFLAGS)
