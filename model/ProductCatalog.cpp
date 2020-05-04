@@ -16,7 +16,7 @@ ProductCatalog::ProductCatalog(){
 	
 	ItemID id2;	id2.setAmount(200);
 	
-	Money price; price.setAmount(3);
+	Money price; price.add(3);
 	
 	ProductDescription desc1(id1, price, "товар 1"); 
 	

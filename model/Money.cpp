@@ -1,8 +1,8 @@
 #include "Money.h"
 
-void Money::setAmount(int Amount){
+void Money::add(int Amount){
 	
-	Money::Amount = Amount;
+	Money::Amount += Amount;
 }
 int Money::getAmount(){
 	

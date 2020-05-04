@@ -3,9 +3,9 @@
 
 class Money{
 private:
-	int Amount;	
+	int Amount = 0;	
 public:	
-	void setAmount(int Amount);
+	void add(int Amount);
 	
 	int getAmount();
 };
