@@ -6,6 +6,7 @@ private:
 	int Amount;		
 public:	
 	void setAmount(int Amount);
+	
 	int getAmount();
 };
 #endif

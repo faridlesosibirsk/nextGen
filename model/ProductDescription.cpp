@@ -18,6 +18,8 @@ ItemID ProductDescription::getItemID(){
 ProductDescription::ProductDescription(ItemID id, Money price, std::string description){
 	
 	ProductDescription::id = id;
+	
 	ProductDescription::price = price;
+	
 	ProductDescription::description = description;
 }
