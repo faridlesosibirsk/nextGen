@@ -5,7 +5,7 @@ Money Payment::getAmount(){
 
 	return amount;
 }
-Payment::Payment(Money cachTendered){
+Payment::setAmount(Money cachTendered){
 	
 	Payment::amount = cachTendered;
 }

@@ -9,6 +9,6 @@ private:
 public:	
 	Money getAmount();
 
-	Payment(Money cachTendered);
+	setAmount(Money cachTendered);
 };
 #endif

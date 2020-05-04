@@ -10,16 +10,16 @@
 class Sale{
 private:
 	Money getTotal();
-	void makeLineItem(ProductDescription desc, int quantity);
 	std::vector<SalesLineItem> lineItems;
 	tm *date;// = localtime(&now); time_t now = time(0);
 	bool Complete = false;
 	Payment payment;
 public:
-	void makeLineItem();
+	void makeLineItem(ProductDescription desc, int quantity);
 	bool isComplete();
 	void becomeComplete();
 	Money getBalance();
 	void makePayment(Money CacheTendered);
+	Sale();
 };
 #endif

@@ -35,5 +35,9 @@ Money Sale::getBalance(){
 }
 void Sale::makePayment(Money CacheTendered){
 	
-	payment = Payment(CacheTendered);
+	payment.setAmount(CacheTendered);
+}
+Sale::Sale(){
+	
+	Sale::payment = Payment();
 }
