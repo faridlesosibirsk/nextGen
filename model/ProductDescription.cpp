@@ -1,4 +1,7 @@
 #include "ProductDescription.h"
+#include "Money.h"
+#include "ItemID.h"
+#include <iostream>
 
 std::string ProductDescription::getDescription(){
 	

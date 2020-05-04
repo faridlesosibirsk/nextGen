@@ -4,13 +4,13 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o model/Money.o model/Payment.o model/ProductDescription.o model/ItemID.o
-LINKOBJ  = main.o model/Money.o model/Payment.o model/ProductDescription.o model/ItemID.o
+OBJ      = main.o model/Money.o model/Payment.o model/ProductDescription.o model/ItemID.o model/ProductCatalog.o
+LINKOBJ  = main.o model/Money.o model/Payment.o model/ProductDescription.o model/ItemID.o model/ProductCatalog.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
 BIN      = nextGen.exe
-CXXFLAGS = $(CXXINCS) 
+CXXFLAGS = $(CXXINCS) -std=gnu++11
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
 
@@ -38,3 +38,6 @@ model/ProductDescription.o: model/ProductDescription.cpp
 
 model/ItemID.o: model/ItemID.cpp
 	$(CPP) -c model/ItemID.cpp -o model/ItemID.o $(CXXFLAGS)
+
+model/ProductCatalog.o: model/ProductCatalog.cpp
+	$(CPP) -c model/ProductCatalog.cpp -o model/ProductCatalog.o $(CXXFLAGS)

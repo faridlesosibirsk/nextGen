@@ -3,7 +3,7 @@
 
 #include "Money.h"
 #include "ItemID.h"
-#include <iostream>;
+#include <iostream>
 
 class ProductDescription{
 private:

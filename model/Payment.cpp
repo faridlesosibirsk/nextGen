@@ -1,4 +1,5 @@
 #include "Payment.h"
+#include "Money.h"
 
 Money Payment::getAmount(){
 
@@ -6,5 +7,5 @@ Money Payment::getAmount(){
 }
 Payment::Payment(Money cachTendered){
 	
-	amount = cachTendered;
+	Payment::amount = cachTendered;
 }

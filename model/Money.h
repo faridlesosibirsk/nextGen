@@ -5,8 +5,7 @@ class Money{
 private:
 	int Amount;	
 public:	
-	operator int() {return Amount;}
-
-	Money(): Amount(0) {};
+	void setAmount(int Amount);
+	int getAmount();
 };
 #endif
